@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.
+0">
+    <title>Real-time Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Real-time Chat</h1>
+            <div class="user-info">
+                <span id="username-display">Guest User</span>
+                <div class="connection-status" id="connection-status">●</div>
+            </div>
+        </div>
+        <div class="chat-main">
+            <div class="sidebar">
+                <div class="room-section">
+                    <h3>Current Room</h3>
+                    <div class="current-room" id="current-room">
+                        <span>No room joined</span>
+                    </div>
+                </div>
+                <div class="room-controls">
+                    <input type="text" id="room-input" placeholder="Enter room name..." maxlength="20">
+                    <button id="join-room-btn">Join Room</button>
+                </div>
+                <div class="quick-rooms">
+                    <h4>Quick Join</h4>
+                    <button class="quick-room-btn" data-room="general">General</button>
+                    <button class="quick-room-btn" data-room="random">Random</button>
+                    <button class="quick-room-btn" data-room="help">Help</butt on>
+                </div>
+            </div>
+            <div class="chat-area">
+                <div class="messages-container" id="messages-container">
+                    <div class="welcome-message">
+                        <p>Welcome to Real-time Chat! 🎉</p>
+                        <p>Join a room to start chatting with others.</p>
+                    </div>
+                </div>
+                <div class="typing-indicator" id="typing-indicator"></div>
+                <div class="message-input-container">
+                    <input type="text" id="message-input" placeholder="Type your message..." maxlength="1000" disabled>
+                    <button id="send-btn" disabled>Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="status-bar">
+            <span id="status-message">Connect to start chatting</span>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

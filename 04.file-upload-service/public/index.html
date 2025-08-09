@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Service</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>File Upload & Processing Service</h1>
+            <div id="userInfo" class="user-info" style="display: none;">
+                <span id="userName"></span>
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </header>
+
+        <!-- Authentication Section -->
+        <div id="authSection" class="auth-section">
+            <div class="auth-forms">
+                <div class="form-container">
+                    <h2>Login</h2>
+                    <form id="loginForm">
+                        <input type="email" id="loginEmail" placeholder="Email" required>
+                        <input type="password" id="loginPassword" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+
+                <div class="form-container">
+                    <h2>Register</h2>
+                    <form id="registerForm">
+                        <input type="text" id="registerName" placeholder="Full Name" required>
+                        <input type="email" id="registerEmail" placeholder="Email" required>
+                        <input type="password" id="registerPassword" placeholder="Password (min 6 chars)" required>
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Application Section -->
+        <div id="appSection" class="app-section" style="display: none;">
+            <!-- Storage Statistics -->
+            <div class="storage-stats">
+                <h3>Storage Usage</h3>
+                <div class="storage-bar">
+                    <div id="storageProgress" class="storage-progress"></div>
+                </div>
+                <div class="storage-info">
+                    <span id="storageText">0 MB / 1024 MB</span>
+                    <span id="storagePercentage">0%</span>
+                </div>
+            </div>
+
+            <!-- File Upload Section -->
+            <div class="upload-section">
+                <h3>Upload Files</h3>
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <p>Drag and drop files here or click to browse</p>
+                        <input type="file" id="fileInput" multiple accept="image/*,.pdf,.doc,.docx,.txt,.csv">
+                        <button id="uploadBtn">Choose Files</button>
+                    </div>
+                </div>
+                <div id="uploadProgress" class="upload-progress" style="display: none;">
+                    <div class="progress-bar">
+                        <div id="progressFill" class="progress-fill"></div>
+                    </div>
+                    <div id="progressText">Uploading...</div>
+                </div>
+            </div>
+
+            <!-- File List Section -->
+            <div class="file-list-section">
+                <div class="list-header">
+                    <h3>Your Files</h3>
+                    <div class="list-controls">
+                        <select id="categoryFilter">
+                            <option value="">All Categories</option>
+                            <option value="image">Images</option>
+                            <option value="document">Documents</option>
+                            <option value="video">Videos</option>
+                            <option value="audio">Audio</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="text" id="searchInput" placeholder="Search files...">
+                        <button id="refreshBtn">Refresh</button>
+                    </div>
+                </div>
+                <div id="fileList" class="file-list">
+                    <!-- Files will be populated here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Messages -->
+        <div id="messages" class="messages"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
