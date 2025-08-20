@@ -1,15 +1,10 @@
 # Building Node.js Applications - Part 1
 
 <div align="center">
-  <img src="https://shubh-books.s3.ap-south-1.amazonaws.com/Book-cover-2.png" alt="Book Cover" width="300" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  <img src="Book-cover.png" alt="Building Node.js Applications - Part 1 Book Cover" width="300" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   
   <h1>🚀 Supporting Repository</h1>
   <p><em>Complete source code and examples for "Building Node.js Applications - Part 1"</em></p>
-  
-  <div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;">
-    <a href="#getting-started" style="background: #007acc; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">📖 Get Started</a>
-    <a href="#lessons" style="background: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">📚 View Lessons</a>
-  </div>
 </div>
 
 ---
@@ -190,6 +185,18 @@ Found a bug or have an improvement? Feel free to:
 ## 📄 License
 
 This repository is provided as supporting material for "Building Node.js Applications - Part 1" by Shubhankar Borade.
+
+## 📧 Contact & Support
+
+For questions, feedback, or support related to this repository or the book:
+
+**📧 Email:** [shubhankar@bombaytechsolutions.com](mailto:shubhankar@bombaytechsolutions.com)
+
+Feel free to reach out for:
+- Technical questions about the code
+- Book-related inquiries
+- Bug reports or suggestions
+- General feedback
 
 ---
 
